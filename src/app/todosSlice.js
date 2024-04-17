@@ -64,6 +64,7 @@ const todosSlice = createSlice({
     addTodo: {
       reducer(state, action) {
         state.todos.push(action.payload);
+        fetchTodos();
       },
       prepare(desc) {
         return { payload: { id: Date.now(), desc, complete: false, date: new Date().toLocaleDateString() } };
@@ -75,15 +76,18 @@ const todosSlice = createSlice({
       if (todoIndex !== -1) {
         state.todos.splice(todoIndex, 1);
       }
+      fetchTodos();
+      window.location.reload();
     },
     toggleTodooComplete: (state, action) => {
       const todoIndex = state.todos.findIndex((todo) => todo.id === action.payload);
-        if (todoIndex !== -1) {
-          state.todos[todoIndex].complete = !state.todos[todoIndex].complete;
-        }
+      if (todoIndex !== -1) {
+        state.todos[todoIndex].complete = !state.todos[todoIndex].complete;
+      }
     },
     markAllTodosCompleted: (state) => {
       state.todos.forEach(todo => todo.complete = true);
+      fetchTodos();
     }
   },
   extraReducers(builder) {
