@@ -1,34 +1,34 @@
 {
-    "todos": [
-        {
-            "id": "1",
-            "desc": "Learn redux-toolkit",
-            "complete": false,
-            "date": "02.10.2024"
-        },
-        {
-            "id": "2",
-            "desc": "Make a dynamic E-commerce website",
-            "complete": true,
-            "date": "23.07.2024"
-        },
-        {
-            "id": "3",
-            "desc": "Have a dinner with Family",
-            "complete": false,
-            "date": "07.10.2024"
-        },
-        {
-            "id": "4",
-            "desc": "Write a summary on Friday",
-            "complete": true,
-            "date": "30.05.2024"
-        },
-        {
-            "id": "5",
-            "desc": "Go to the gym after class",
-            "complete": false,
-            "date": "15.12.2024"
-        }
-    ]
+  "todos": [
+    {
+      "id": "1",
+      "desc": "Learn redux-toolkit",
+      "complete": false,
+      "date": "02.10.2024"
+    },
+    {
+      "id": "2",
+      "desc": "Make a dynamic E-commerce website",
+      "complete": true,
+      "date": "23.07.2024"
+    },
+    {
+      "id": "3",
+      "desc": "Have a dinner with Family",
+      "complete": false,
+      "date": "07.10.2024"
+    },
+    {
+      "id": "4",
+      "desc": "Write a summary on Friday",
+      "complete": true,
+      "date": "30.05.2024"
+    },
+    {
+      "id": "5",
+      "desc": "Go to the gym after class",
+      "complete": false,
+      "date": "15.12.2024"
+    }
+  ]
 }
